@@ -11,9 +11,9 @@ RectVektor::RectVektor()
 RectVektor::~RectVektor()
 {
 	while (pRectVec->size() > 0) {
-		Rectangle* pRect = (*pRectVec)[pRectVec->size];
+		//Rectangle* pRect = (*pRectVec)[pRectVec->size];
 		
-		delete pRect;
+		//delete pRect;
 	}
 }
 

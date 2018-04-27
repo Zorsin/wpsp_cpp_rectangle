@@ -15,6 +15,12 @@ public:
 
 	void Add(Rectangle* pRect);
 	void Print() const;
+
+	Rectangle*& operator[](const int idx);
+
+	//Fuer die tiefe Kopie
+	RectArray(const RectArray& orig);
+	RectArray& operator=(const RectArray& rhs);
 };
 
 class Bad_area{};
